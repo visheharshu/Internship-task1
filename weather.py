@@ -2,7 +2,7 @@ import requests
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-api_key = "66709d67d8ed592015d1acab77aec7ce"
+api_key = "YOUR_API_KEY"
 city = "Mumbai"
 url = f"http://api.openweathermap.org/data/2.5/weather?q={city}&appid={api_key}&units=metric"
 
@@ -22,3 +22,4 @@ sns.barplot(x=labels, y=values, palette='viridis')
 plt.title(f"Weather Report for {city}")
 plt.ylabel("Values")
 plt.show()
+
